@@ -39,6 +39,9 @@
                                     <constraint firstAttribute="width" constant="249" id="wMw-CI-Ruv"/>
                                 </constraints>
                                 <state key="normal" image="playbtn"/>
+                                <connections>
+                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2Q-nC-YUs"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TzC-0L-oIZ" userLabel="TapsTxt">
                                 <rect key="frame" x="176" y="329" width="249" height="30"/>
@@ -58,6 +61,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="177" id="uYz-sJ-u2j"/>
                                 </constraints>
                                 <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="onCoinTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="maU-3s-lFJ"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZd-eM-TuX" userLabel="TapsLbl">
                                 <rect key="frame" x="176" y="213" width="249" height="67"/>
@@ -101,6 +107,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="howManyTapsTxt" destination="TzC-0L-oIZ" id="97K-Vu-91s"/>
+                        <outlet property="logoImg" destination="xci-e0-mqq" id="d1p-fC-U84"/>
+                        <outlet property="playBtn" destination="T2I-87-3y8" id="Fmc-5N-yH5"/>
+                        <outlet property="tapBtn" destination="Lk3-E8-i5p" id="nbO-TJ-jLq"/>
+                        <outlet property="tapsLbl" destination="BZd-eM-TuX" id="w6v-ie-2Rt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
